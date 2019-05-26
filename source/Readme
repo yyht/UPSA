@@ -1,0 +1,8 @@
+# data
+quora:https://www.kaggle.com/c/quora-question-pairs/data
+
+# training
+nohup python source/run.py  --exps_dir exps  --exp_name forward  --gpu 3   --hidden_size 512 --batch_size 64 --dropout 0.2  &
+
+# sampling
+python source/run.py --no_train  --exps_dir test --exp_name test --gpu 1 --mode mh  --forward_path exps/forward/ckpt/model-best.pkl  --backward_path exps/backward/ckpt/model-best.pkl  --hidden_size 512
