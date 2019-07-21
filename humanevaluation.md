@@ -5,6 +5,7 @@ We randomly select 500 sentences from the test data as input and generate paraph
 close to the reference sentence) and fluency (the paraphrase sentence is fluent as a natural language sentence, and the grammar is correct). Hence each assessor gives two scores to each paraphrase, both ranging from 1 to 5. Each paraphrase is rated by two assessors, and then averaged as the final judgement.
 # Results
 | Model |Relevance|Fluency|  
+|---|---|---|
 | VAE   |  2.70   | 3.23  |  
 | CGMH  |  3.02   | 3.51  |  
 | UPSA  |  3.64   | 3.76  |  
